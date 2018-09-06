@@ -6,7 +6,7 @@ import org.junit.Test;
 /**
  * Created by oiffice on 2018/7/18.
  */
-public class PalindromeNumberTest {
+public class LeetCode009 {
 
     @Test
     public void testing() {

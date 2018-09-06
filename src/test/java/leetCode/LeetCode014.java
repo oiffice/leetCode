@@ -6,7 +6,7 @@ import org.junit.Test;
 /**
  * Created by oiffice on 2018/7/27.
  */
-public class LongestCommonPrefixTest {
+public class LeetCode014 {
 
     @Test
     public void test() {

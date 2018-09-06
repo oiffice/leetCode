@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * Created by oiffice on 2018/7/16.
  */
-public class MedianofTwoSortedArraysTest {
+public class LeetCode004 {
 
     @Test
     public void test() {

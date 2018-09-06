@@ -9,7 +9,7 @@ import java.util.Objects;
 /**
  * Created by oiffice on 2018/7/3.
  */
-public class NAddTwoNumbersTest {
+public class NLeetCode002 {
 
     @Test
     public void test() {

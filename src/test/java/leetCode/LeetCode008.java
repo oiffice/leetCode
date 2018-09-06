@@ -8,7 +8,7 @@ import java.math.BigInteger;
 /**
  * Created by oiffice on 2018/7/18.
  */
-public class StringToIntegerTest {
+public class LeetCode008 {
 
     @Test
     public void testing() {

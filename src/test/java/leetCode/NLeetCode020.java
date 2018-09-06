@@ -9,7 +9,7 @@ import java.util.Stack;
 /**
  * Created by oiffice on 2018/7/3.
  */
-public class NValidParenthesesTest {
+public class NLeetCode020 {
 
     @Test
     public void test() {

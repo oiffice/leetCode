@@ -9,7 +9,7 @@ import java.util.Set;
 /**
  * Created by oiffice on 2018/7/16.
  */
-public class NLongestSubstringTest {
+public class NLeetCode003 {
 
     @Test
     public void longestSubstringTest() {

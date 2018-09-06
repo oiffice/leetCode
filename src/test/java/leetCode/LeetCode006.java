@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * Created by oiffice on 2018/7/16.
  */
-public class ZigZagConversionTest {
+public class LeetCode006 {
 
     @Test
     public void zigZag() {

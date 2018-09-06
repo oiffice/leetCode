@@ -10,7 +10,7 @@ import java.util.Objects;
 /**
  * Created by oiffice on 2018/7/3.
  */
-public class TwoSumTest {
+public class LeetCode001 {
 
     @Test
     public void testTwoSum() {

@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by oiffice on 2018/7/18.
  */
-public class NReverseIntegerTest {
+public class NLeetCode007 {
 
     @Test
     public void testing() {

@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * Created by oiffice on 2018/7/19.
  */
-public class NContainerWithMostWaterTest {
+public class NLeetCode011 {
 
     @Test
     public void testing() {
