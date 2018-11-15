@@ -50,14 +50,18 @@ public class NLeetCode015 {
 
     public List<List<Integer>> threeSum(int[] nums) {
         // Assumptions: array is not null, array.length >= 3
+
         List<List<Integer>> result = new ArrayList<List<Integer>>();
         Arrays.sort(nums);
         for (int i = 0; i < nums.length - 2; i++) {
+
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
+
             int left = i + 1;
             int right = nums.length - 1;
+
             while (left < right) {
                 int tmp = nums[left] + nums[right];
                 if (tmp + nums[i] == 0) {
