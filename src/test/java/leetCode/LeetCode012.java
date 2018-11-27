@@ -3,11 +3,10 @@ package leetCode;
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- * Created by oiffice on 2018/11/8.
- */
-public class LeetCode012 {
+import java.util.HashMap;
+import java.util.Map;
 
+public class LeetCode012 {
     @Test
     public void assertIII() {
 
@@ -50,24 +49,51 @@ public class LeetCode012 {
         Assert.assertEquals("X", this.intToRoman(10));
     }
 
-    private String intToRoman(int num) {
-        String[] m = {"", "M", "MM", "MMM"};
-        String[] c = {"", "C", "CC", "CCC", "DC", "D", "DC", "DCC", "DCCC", "CM"};
-        String[] x = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
-        String[] i = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+    public String intToRoman(int num) {
+        int digitals = String.valueOf(num).length();
+
+        Map<Integer, String> numberToRoma = new HashMap<>();
+        numberToRoma.put(1000, "M");
+        numberToRoma.put(500, "D");
+        numberToRoma.put(100, "C");
+        numberToRoma.put(50, "L");
+        numberToRoma.put(10, "X");
+        numberToRoma.put(5, "V");
+        numberToRoma.put(1, "I");
 
         String result = "";
 
-        result = m[num/1000];
+        for (int i = digitals - 1; i >= 0; i--) {
 
-        num = num % 1000;
-        result += c[num/100];
+            int divider = (int) Math.pow(10, i);
+            int divide = num / divider;
+            num = num % divider;
 
-        num = num % 100;
-        result += x[num/10];
+            if (divide % 5 == 4) { // deal with 9, 4
 
-        num = num % 10;
-        result += i[num];
+                result = result.concat(numberToRoma.get(divider) + numberToRoma.get(divider * (divide + 1)));
+
+            } else if (divide > 5) { // deal with 6~8
+
+                result = result.concat(numberToRoma.get(divider * 5));
+
+                for (int j = 0; j < (divide - 5); j++) {
+                    result = result.concat(numberToRoma.get(divider));
+                }
+
+
+            } else if (divide > 0 && divide % 5 == 0 ) {
+                result = result.concat(numberToRoma.get(divider * divide));
+
+            } else {
+
+                for (int j = 0; j < divide; j++) {
+                    result = result.concat(numberToRoma.get(divider));
+                }
+
+            }
+
+        }
 
         return result.toUpperCase();
     }
