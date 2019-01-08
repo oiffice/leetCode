@@ -1,4 +1,4 @@
-package leetCode;
+package leetCode.OneToTen;
 
 import org.junit.Assert;
 import org.junit.Test;

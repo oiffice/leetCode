@@ -1,4 +1,4 @@
-package leetCode;
+package leetCode.XIToTwenty;
 
 import org.junit.Test;
 
