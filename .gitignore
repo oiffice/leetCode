@@ -84,6 +84,9 @@ cmake-build-debug/
 
 # IntelliJ
 out/
+leetCode.iml
+.idea/
+target/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
