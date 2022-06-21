@@ -28,7 +28,7 @@ public class LeetCode297 {
         if (root == null) return "#";
 
         StringBuilder sb = new StringBuilder();
-        sb.append(root.value)
+        sb.append(root.val)
                 .append(",")
                 .append(serialize(root.left))
                 .append(",")
