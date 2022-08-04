@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class LeetCode1642 {
+public class FurthestBuildingYouCanReach1642 {
     @Test
     public void test1() {
         assertEquals(4, furthestBuilding(new int[]{4, 2, 7, 6, 9, 14, 12}, 5, 1));

@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class LeetCode058 {
+public class LengthofLastWord058 {
 
     public int lengthOfLastWord(String s) {
 

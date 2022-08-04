@@ -8,7 +8,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.format;
 
-public class LeetCode297_String {
+public class SerializeDeserializeBT_String {
 
     @Test
     public void test1() {

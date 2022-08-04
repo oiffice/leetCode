@@ -6,7 +6,7 @@ import java.util.Objects;
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingDeque;
 
-public class LeetCode297 {
+public class SerializeAndDeserializeBT {
     @Test
     public void test1() {
         TreeNode root = new TreeNode(1);

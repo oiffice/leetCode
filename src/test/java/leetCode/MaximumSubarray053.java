@@ -3,7 +3,7 @@ package leetCode;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class LeetCode053 {
+public class MaximumSubarray053 {
 
     @Test
     public void test1() {

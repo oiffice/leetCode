@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class LeetCode060 {
+public class PermutationSequence060 {
 
     public String getPermutation(int n, int k) {
 

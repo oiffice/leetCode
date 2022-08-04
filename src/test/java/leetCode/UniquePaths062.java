@@ -4,9 +4,25 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class LeetCode062 {
-
+public class UniquePaths062 {
     public int uniquePaths(int m, int n) {
+
+        int l = Math.max(m, n);
+        int w = Math.min(m, n);
+        int[][] d = new int[l+1][w+1];
+        d[1][1] = 1;
+
+        for (int i = 1; i <= l; i++) {
+            for (int j = 1; j <= w; j++) {
+                if (i == 1 && j == 1) continue;
+                d[i][j] = d[i - 1][j] + d[i][j - 1];
+            }
+        }
+
+        return d[l][w];
+    }
+
+    public int uniquePathsII(int m, int n) {
 
         double num = 1, denom = 1;
         int small = m > n ? n : m;
@@ -24,12 +40,12 @@ public class LeetCode062 {
 
     @Test
     public void test1() {
-        assertEquals(3, uniquePaths(3, 2));
+        assertEquals(20, uniquePaths(4, 4));
     }
 
     @Test
     public void test2() {
-        assertEquals(28, uniquePaths(7, 3));
+        assertEquals(28, uniquePaths(3, 7));
     }
 
     @Test

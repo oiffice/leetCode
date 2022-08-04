@@ -11,8 +11,34 @@ public class LeetCode213 {
     public void test3() {
         assertEquals(12, rob(new int[]{5, 2, 1, 3, 6, 4}));
     }
-
+    @Test
+    public void test1() {
+        assertEquals(3, rob(new int[]{1,2,3}));
+    }
     public int rob(int[] nums) {
+        if (nums.length == 1) return nums[0];
+        if (nums.length == 2) return Math.max(nums[0], nums[1]);
+
+        return Math.max(rob4(nums, 0, nums.length - 2), rob4(nums, 1, nums.length - 1));
+
+    }
+
+    public int rob4(int[] nums, int start, int end) {
+
+        int n = end - start + 1;
+        int[] p = new int[n];
+
+        p[0] = nums[start];
+        p[1] = Math.max(nums[start], nums[start + 1]);
+
+        for(int i = 2; i < n; i++) {
+            p[i] = Math.max(nums[i + start] + p[i - 2], p[i - 1]);
+        }
+
+        return p[n - 1];
+    }
+
+    public int robIII(int[] nums) {
 
         if (nums.length == 1) return nums[0];
         if (nums.length == 2) return Math.max(nums[0], nums[1]);

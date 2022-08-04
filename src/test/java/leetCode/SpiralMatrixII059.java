@@ -2,7 +2,7 @@ package leetCode;
 
 import org.junit.Test;
 
-public class LeetCode059 {
+public class SpiralMatrixII059 {
     public int[][] generateMatrix(int n) {
 
         if (n == 0) {
